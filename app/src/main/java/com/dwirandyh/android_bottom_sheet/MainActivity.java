@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
                 switch (newState){
                     case BottomSheetBehavior.STATE_HIDDEN: {
-
+                        sheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
                     }
                     break;
                     case BottomSheetBehavior.STATE_EXPANDED: {
